@@ -7,4 +7,4 @@ import Happstack.Server ( Browsing(EnableBrowsing), nullConf
 conf = nullConf { port = 12019 }
 
 main :: IO ()
-main = simpleHTTP nullConf $ serveDirectory EnableBrowsing [] "."
+main = simpleHTTP conf $ serveDirectory EnableBrowsing [] "./MathJax"
